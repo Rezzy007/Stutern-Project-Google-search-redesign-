@@ -125,6 +125,38 @@ html {
 .nav-right i {
     font-size: 20px;
     color: #5F6368;
+    padding: 8px;
+}
+
+.nav-right i:hover{
+    background-color: rgb(230, 226, 226);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.nav-right .tooltip{
+    display: inline-block;
+    position: relative;
+}
+
+.nav-right .tooltip .tooltiptext{
+    background-color: #202124;
+    color: #fff;
+    width: max-content;
+    padding: 5px 10px;
+    margin-top: 13px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.nav-right .tooltip:hover .tooltiptext{
+    visibility: visible;
 }
 
 .nav-right .user {
@@ -140,6 +172,23 @@ html {
     margin: 2px;
     border: 2px solid #fff;
     border-radius: 50%;
+}
+
+.nav-right .user .tooltiptext span{
+    display: block;
+}
+
+.nav-right .user .tooltiptext{
+    width: 170px;
+    line-height: 18px;
+    text-align: left;
+    right: 80%;
+    transform: translateX(-80%);
+    margin-top: 2px;
+}
+
+.nav-right .user .account-name{
+    color: #ccc;
 }
 
 .nav-links-container {
@@ -1212,6 +1261,14 @@ html {
     align-items: center;
     padding: 20px 0 15px;
     cursor: pointer;
+}
+
+.right-col .stats:hover h3{
+    text-decoration: underline;
+}
+
+.right-col .stats:hover .r-angle{
+    background-color: rgb(223, 221, 221);
 }
 
 .stats h3{
